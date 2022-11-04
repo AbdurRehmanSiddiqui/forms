@@ -15,10 +15,9 @@ if (!$conn) {
 } else {
     echo "connection successful";
 
-
-
-
     $php ="insert into froms_data(product_name,sku,description)values('$n', '$s', '$d')";
     mysqli_query($conn, $php);
+
+    mysqli_close($conn);
 }
 ?>
