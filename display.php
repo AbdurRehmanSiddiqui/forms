@@ -22,7 +22,7 @@ if (!$conn) {
 
 <html>
 <head>
-
+ <title>Records</title>
 </head>
 <body>
 <table>
@@ -32,6 +32,7 @@ if (!$conn) {
         <th>Name</th>
         <th>SKU</th>
         <th>Description</th>
+        <th>Actions</th>
     </tr>
 
     </thead>
@@ -47,11 +48,17 @@ if (!$conn) {
                 echo $value['sku']; ?>  </td>
             <td> <?php
                 echo $value['description']; ?>  </td>
+            <td>
+                <a href="edit.php?pk=<?php echo $value['ID']; ?>" >Edit</a>
+            </td>
         </tr>
     <?php
     } ?>
     </tbody>
 </table>
+<?php
+    mysqli_close($conn);
+?>
 
 </body>
 </html>

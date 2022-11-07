@@ -1,0 +1,44 @@
+
+.input {
+    width: 80%;
+    length: 20%;
+    border-color: aliceblue;
+    padding-left: 25px;
+    margin-top: 20px;
+
+}
+
+label {
+    text-align: left;
+    font-size: medium;
+
+}
+
+
+.i {
+    width: 100%;
+    height: 30px;
+    margin-left: 45px;
+
+}
+
+#sbtn {
+
+    align-content: center;
+}
+
+.center {
+
+    text-align: center;
+    width: 33%;
+    margin: auto;
+    padding-left: 15px;
+    padding-top: 15px;
+
+}
+
+.textarea {
+    margin-top: 25px;
+
+
+}

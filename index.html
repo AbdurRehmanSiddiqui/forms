@@ -1,26 +1,37 @@
 <!Doctype html>
 <html>
-<h1>ADD PRODUCT</h1>
+<title>Add Products</title>
+<link rel="stylesheet" href="style.css">
+<div class="center">
+    <h1>ADD PRODUCT</h1>
+</div>
 <body>
 <form action="backend.php" method="POST">
-    <label for="n"> Name</label>
-    <input type="text" id="n" name="my_name">
+    <div class="input">
+        <label for="n"> Name</label>
+        <input type="text" id="n" name="my_name" class="i">
+    </div>
 
-    <br/>
-    <label for="s"> sku </label>
-    <input type="text" id="s" name="my_sku">
 
-    <br/>
+    <div class="input">
+        <label for="s"> SKU </label>
+        <input type="text" id="s" name="my_sku" class="i">
+    </div>
 
-    <label for="d">Description:</label>
-    <br>
-    <textarea rows="10" cols="60" id="d" name="my_description"></textarea>
-    <br>
+    <div class="textarea">
+        <label for="d">Description </label>
+        <textarea rows="10" cols="60" id="d" name="my_description"></textarea>
 
-    <input type="Submit">
+    </div>
+    <div class="center">
+        <input id="sbtn" type="Submit" value="Add">
+    </div>
+
 </form>
-<a href="display.php">
-    View All Records
-</a>
+<div class="right">
+    <a href="display.php">
+        View All Records
+    </a>
+</div>
 </body>
 </html>
