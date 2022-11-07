@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+<title>Add Products</title>
+<link rel="stylesheet" href="style.css">
+<div class="center">
+    <h1>Edit PRODUCT</h1>
+</div>
+<body>
+<form action="edit.php" method="POST">
+    <div class="input">
+        <label for="n"> Name</label>
+        <input type="text" id="n" name="my_name" class="i">
+    </div>
+
+
+    <div class="input">
+        <label for="s"> SKU </label>
+        <input type="text" id="s" name="my_sku" class="i">
+
+    </div>
+
+    <div class="textarea">
+        <label for="d">Description </label>
+        <textarea rows="10" cols="60" id="d" name="my_description"></textarea>
+
+    </div>
+    <div class="center">
+        <input id="sbtn" type="Submit" value="Edit">
+    </div>
+
+</form>
+<div class="right">
+    <a href="display.php">
+        View All Records
+    </a>
+</div>
+</body>
+</html>
