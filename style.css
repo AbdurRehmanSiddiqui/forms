@@ -42,3 +42,35 @@ label {
 
 
 }
+#1.table{
+
+    border-color: black;
+    border-left: yellow;
+
+}
+#2.table{
+    margin-left: 15px;
+}
+#3.table{
+
+
+    margin-left: 25px;
+}
+#4.table{
+
+    margin-left :35px;
+
+}
+.Search_Bar{
+    width: 40%;
+    length: 20px;
+    font-size: larger;
+    background-color: aliceblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.Div_SearchBar{
+    padding-left: 30%;
+
+}
