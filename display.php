@@ -36,13 +36,12 @@ if (!$conn) {
 <table>
         <thead>
         <tr>
-            <b>
                 <th>ID</th>
                 <th>Name</th>
                 <th>SKU</th>
                 <th>Description</th>
                 <th>Actions</th>
-            </b>
+
         </tr>
         </thead>
 

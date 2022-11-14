@@ -1,0 +1,34 @@
+body{
+    background-color:aliceblue;
+
+}
+#sku1{
+    WIDTH: 70%;
+    HEIGHT: 50PX;
+    FONT-SIZE: larger;
+    BORDER-BLOCK-WIDTH: 2PX;
+    /* BORDER-COLOR: chocolate; */
+    border-radius: 15px;
+    /* padding-left: 100px; */
+    text-align: center;
+   // padding-right: 15px;
+
+
+
+}
+#sku{
+
+    padding-top: 300px;
+    margin: auto;
+    width: 60%;
+    padding-left: 100px;
+
+}
+#s_btn{
+
+    height: 40px;
+    color: aliceblue;
+    background: black;
+    border-radius: 8px;
+
+}
