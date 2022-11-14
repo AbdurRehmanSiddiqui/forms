@@ -5,6 +5,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+<div id="title">
+    <h1>SEARCH PRODUCT BY SKU</h1>
+</div>
 
 <div class="search-bar" id="sku">
     <input class="search-bar" id="sku1" placeholder="Search by SKU">
@@ -31,42 +34,51 @@
 
     </table>
 </div>
-<div id="Search-btn">
-    <button id="_Search-btn">Search Again</button>
+<div id="search-div">
+    <button id="search-again-btn">Search Again</button>
 </div>
 <script>
     $(".table#hide").hide();
-    $("#Search-btn").hide();
+    $("#search-div").hide();
 
     $("#s_btn").on("click", function (event) {
 
         var input = $('#sku1').val();
-        $(".table#hide").show();
-        $.ajax({
+        if (!input) {
 
-            url: "search_by_SKU.php",
-            type: "GET",
-            data: {inpt: input},
-            success: function (data) {
-                console.log(data);
-                $(".Search-Bar#sku").hide();
-                $(".table#table-row").html(data);
-                $("#Search-btn").show();
-                $("#Search-btn").on("click",function (event){
-                    $(".table#hide").hide();
-                    $("#Search-btn").hide();
-                    $(".Search-Bar#sku").show();
+            alert("Please Enter input");
+
+        }
+        else
+        {
+            $(".table#hide").show();
+            $("#title").hide();
+            $.ajax({
+
+                url: "search_by_SKU.php",
+                type: "GET",
+                data: {inpt: input},
+                success: function (data) {
+                    console.log(data);
+                    $(".search-bar#sku").hide();
+                    $(".table#table-row").html(data);
+                    $("#search-div").show();
+                    $("#search-div").on("click", function (event) {
+                        $(".table#hide").hide();
+                        $("#search-div").hide();
+                        $(".search-bar#sku").show();
+                        $("#title").show();
+
+                    });
 
 
-                });
+                }
 
+            });
 
-            }
-
-        });
-
-
+        }
     });
+
 </script>
 
 

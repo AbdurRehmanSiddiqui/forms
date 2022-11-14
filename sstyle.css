@@ -18,7 +18,7 @@ body{
 }
 #sku{
 
-    padding-top: 300px;
+    padding-top: 50px;
     margin: auto;
     width: 60%;
     padding-left: 100px;
@@ -32,11 +32,21 @@ body{
     border-radius: 8px;
 
 }
-#_Search-btn{
+#search-again-btn{
 
     height: 40px;
     color: aliceblue;
     background: black;
     border-radius: 8px;
+
+}
+#title{
+    font-style: italic;
+    font-family: fangsong;
+    width: auto;
+    margin: auto;
+    margin-left: 400px;
+    margin-top: 80px;
+
 
 }
