@@ -31,8 +31,12 @@
 
     </table>
 </div>
+<div id="Search-btn">
+    <button id="_Search-btn">Search Again</button>
+</div>
 <script>
     $(".table#hide").hide();
+    $("#Search-btn").hide();
 
     $("#s_btn").on("click", function (event) {
 
@@ -47,6 +51,15 @@
                 console.log(data);
                 $(".Search-Bar#sku").hide();
                 $(".table#table-row").html(data);
+                $("#Search-btn").show();
+                $("#Search-btn").on("click",function (event){
+                    $(".table#hide").hide();
+                    $("#Search-btn").hide();
+                    $(".Search-Bar#sku").show();
+
+
+                });
+
 
             }
 
